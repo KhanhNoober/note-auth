@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "note-auth:build:production",
+            "firebaseProject": "note-auth-2a579",
+            "firebaseHostingSite": "note-auth-2a579"
+          }
         }
       }
     }

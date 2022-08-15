@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "note-auth-2a579": {
+      "hosting": {
+        "note-auth": [
+          "note-auth-2a579"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "note-auth-2a579"
+  }
+}

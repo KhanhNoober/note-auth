@@ -1,0 +1,28 @@
+<div class="notes-container">
+  <div class="note" *ngFor="let note of (notes$ | async)">
+    <div class="title">
+      {{note.title}}
+    </div>
+    <div>
+      <p class="description">
+        {{note.description}}
+      </p>
+    </div>
+    <div class="button-container">
+      <button class="button left">Update</button>
+      <button class="button right" (click)="deleteNote(note)">Delete</button>
+    </div>
+  </div>
+
+  <div class="note">
+    <div>
+      <input class="input i-title" type="text" placeholder="Add Title" name="title" [(ngModel)]="currentAddingNote.title">
+    </div>
+    <div>
+      <input class="input i-des" type="text" placeholder="Add Description" name="description" [(ngModel)]="currentAddingNote.description">
+    </div>
+    <div class="button-container">
+      <button class="button" (click)="addNote()">Add</button>
+    </div>
+</div>
+
